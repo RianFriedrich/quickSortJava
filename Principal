@@ -1,0 +1,17 @@
+package pacote;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		System.out.println("Insira o tamanho de numeros do valor\n");
+		int tamanhoV = ler.nextInt();
+		System.out.println("Insira o maior número a ser gerado no vetor\n");
+		int limite = ler.nextInt();
+		metodos m = new metodos(tamanhoV, limite);
+		m.gerarvetor(tamanhoV, limite);
+	}
+
+}
