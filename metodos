@@ -1,0 +1,25 @@
+package pacote;
+
+import java.util.Random;
+
+public class metodos {
+	private int tamanhoV;
+	private int limite;
+
+	public metodos(int tamanhoV, int limite) {
+		this.tamanhoV = tamanhoV;
+		this.limite = limite;
+	}
+
+	public void gerarvetor(int tamanhoV, int limite) {
+		System.out.println("Vetor Criado com"+tamanhoV+"e até o número"+limite+":\n");
+		int i;
+		Random rand = new Random();
+		int[] vetor = new int[tamanhoV];
+		for(i=0; i < vetor.length; i++) {
+			vetor[i] = rand.nextInt(limite);
+			System.out.println(+vetor[i]+"\t");
+		}
+	}
+
+}
